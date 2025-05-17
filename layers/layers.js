@@ -31,12 +31,12 @@ var lyr_2023Japan22023japan2_1 = new ol.layer.Vector({
 
 lyr_1868japan_0.setVisible(true);lyr_2023Japan22023japan2_1.setVisible(true);
 var layersList = [lyr_1868japan_0,lyr_2023Japan22023japan2_1];
-lyr_1868japan_0.set('fieldAliases', {'国名': '国名', });
-lyr_2023Japan22023japan2_1.set('fieldAliases', {'KEN': 'KEN', });
-lyr_1868japan_0.set('fieldImages', {'国名': '', });
-lyr_2023Japan22023japan2_1.set('fieldImages', {'KEN': 'TextEdit', });
-lyr_1868japan_0.set('fieldLabels', {'国名': 'no label', });
-lyr_2023Japan22023japan2_1.set('fieldLabels', {'KEN': 'no label', });
+lyr_1868japan_0.set('fieldAliases', {'fid': 'fid', });
+lyr_2023Japan22023japan2_1.set('fieldAliases', {'fid': 'fid', 'JCODE': 'JCODE', 'KEN': 'KEN', });
+lyr_1868japan_0.set('fieldImages', {'fid': '', });
+lyr_2023Japan22023japan2_1.set('fieldImages', {'fid': '', 'JCODE': '', 'KEN': 'TextEdit', });
+lyr_1868japan_0.set('fieldLabels', {'fid': 'inline label', });
+lyr_2023Japan22023japan2_1.set('fieldLabels', {'fid': 'no label', 'JCODE': 'header label', 'KEN': 'no label', });
 lyr_2023Japan22023japan2_1.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });
